@@ -1,81 +1,83 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      ElevateModernZone - Management Consulting | AI-Powered Content & Data
-      Insights
-    </title>
-    <meta
-      name="description"
-      content="Management consulting, data-driven operations & AI-powered content by Ayman Mohamed"
-    />
-    <meta name="author" content="Ayman Mohamed" />
-
-    <meta
-      property="og:title"
-      content="ElevateModernZone - Management Consulting"
-    />
-    <meta
-      property="og:description"
-      content="Management consulting, data-driven operations & AI-powered content by Ayman Mohamed"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/placeholder.svg" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@ElevateModernZone" />
-    <meta name="twitter:image" content="/placeholder.svg" />
-
-    <!-- SEO Enhancements -->
-    <meta
-      name="keywords"
-      content="management consulting, data analysis, AI content, business operations, data-driven insights, professional services"
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://elevatemodernzone.com" />
-
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3b82f6" />
+    <meta name="msapplication-TileColor" content="#3b82f6" />
+    <meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TP9NTY9R5W"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-TP9NTY9R5W");
-    </script>
-
-    <!-- Google AdSense -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8838669278652229"
-      crossorigin="anonymous"
-    ></script>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/og-image.jpg" type="image/jpeg" />
+    <link rel="preload" as="image" href="/logo.png" type="image/png" />
+    
+    <!-- Meta tags -->
+    <meta name="description" content="Professional business consulting, data analysis, and AI-powered content solutions. Based in Dubai, serving clients globally with expertise in digital transformation." />
+    <meta name="keywords" content="business consulting, data analysis, AI solutions, Dubai, UAE, digital transformation, business strategy, market analysis" />
+    <meta name="author" content="Ayman Mohamed" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="ElevateModernZone - Business Consulting & Digital Solutions" />
+    <meta property="og:description" content="Professional business consulting, data analysis, and AI-powered content solutions. Based in Dubai, serving clients globally with expertise in digital transformation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elevatemodernzone.com" />
+    <meta property="og:image" content="https://elevatemodernzone.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="ElevateModernZone" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ElevateModernZone - Business Consulting & Digital Solutions" />
+    <meta name="twitter:description" content="Professional business consulting, data analysis, and AI-powered content solutions. Based in Dubai, serving clients globally." />
+    <meta name="twitter:image" content="https://elevatemodernzone.com/og-image.jpg" />
+    <meta name="twitter:creator" content="@elevatemodernzone" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://elevatemodernzone.com" />
+    
+    <!-- Manifest and PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ElevateModernZone" />
+    
+    <!-- Security headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    
+    <title>ElevateModernZone - Business Consulting & Digital Solutions</title>
   </head>
-
   <body>
     <div id="root"></div>
+    <!-- Netlify form handling -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

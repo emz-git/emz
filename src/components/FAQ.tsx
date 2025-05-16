@@ -125,7 +125,7 @@ const FAQ = () => {
           <p className="text-slate-700 dark:text-gray-300 mb-4">
             Don't see your question answered here?
           </p>
-          <a href="#contact" className="btn-primary inline-block">
+          <a href="#contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600">
             Ask Us Directly
           </a>
         </div>

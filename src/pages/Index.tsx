@@ -1,17 +1,18 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Services from "../components/Services";
 import FontLoader from "../components/FontLoader";
-import OurApproach from "../components/OurApproach";
-import WhyChooseUs from "../components/WhyChooseUs";
-import Portfolio from "../components/Portfolio";
-import FAQ from "../components/FAQ";
-import Contact from "../components/Contact";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import StickyCTA from "../components/StickyCTA";
+
+const About = lazy(() => import("../components/About"));
+const Services = lazy(() => import("../components/Services"));
+const OurApproach = lazy(() => import("../components/OurApproach"));
+const WhyChooseUs = lazy(() => import("../components/WhyChooseUs"));
+const Portfolio = lazy(() => import("../components/Portfolio"));
+const FAQ = lazy(() => import("../components/FAQ"));
 
 const Index = () => {
   return (
@@ -48,13 +49,15 @@ const Index = () => {
         <Header />
         <main id="main-content">
           <Hero />
-          <About />
-          <Services />
-          <OurApproach />
-          <WhyChooseUs />
-          <Portfolio />
-          <FAQ />
-          <Contact />
+          <Suspense fallback={<div className="text-center py-8">Loading...</div>}>
+            <About />
+            <Services />
+            <OurApproach />
+            <WhyChooseUs />
+            <Portfolio />
+            <FAQ />
+          </Suspense>
+          <ContactForm />
         </main>
         <Footer />
         <StickyCTA />

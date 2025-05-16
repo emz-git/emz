@@ -1,10 +1,17 @@
-
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
 Sitemap: https://elevatemodernzone.com/sitemap.xml
+
+# Disallow admin and private routes
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl-delay for all bots
+Crawl-delay: 10
 
 # Specific crawlers
 User-agent: Googlebot
@@ -21,6 +28,3 @@ Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
-
-# Don't crawl any potential admin areas
-Disallow: /admin/
